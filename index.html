@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+  .function-item{
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+  <div class="content" style="padding: 20px 15px;">
+    <!-- <select class="form-select" id="select" aria-label="Default select example">
+      <option selected>选择</option>
+     <option value="9">addProduct</option>
+    <option value="10">addRateType</option>
+    <option value="11">bindIntro</option>
+    <option value="12">deleteProduct</option>
+    <option value="13">deleteRateType</option>
+    <option value="17">getETH</option>
+    <option value="20">getRateAmount</option>
+    <option value="23">getReward</option>
+    <option value="25">getToken</option>
+    <option value="27">initialize</option>
+    <option value="37">renounceOwnership</option>
+    <option value="43">setBurnAddress</option>
+    <option value="44">setBurnRate</option>
+    <option value="45">setFoundationAddress</option>
+    <option value="46">setFoundationRate</option>
+    <option value="47">setLimitAddToken</option>
+    <option value="48">setLimitPower</option>
+    <option value="49">setNodeAddress</option>
+    <option value="50">setNodeRate</option>
+    <option value="51">setNtsPrice</option>
+    <option value="52">setPeriodTime</option>
+    <option value="53">setReceiveAddress</option>
+    <option value="54">setRewardsToken</option>
+    <option value="55">setRouterPath</option>
+    <option value="56">setSuperNodeAddress</option>
+    <option value="57">setSuperNodeRate</option>
+    <option value="58">setUsdt</option>
+    <option value="59">setUserPancakePrice</option>
+    <option value="60">setWbnb</option>
+    <option value="61">setWithdrawRate</option>
+    <option value="62">stake</option>
+    <option value="66">transferOwnership</option>
+    <option value="67">withdrawRecord</option>
+    
+    </select> -->
+   
+    <div style="margin-top: 20px" id="function-box">
+      <div>
+        质押合约NTS价格设置
+      </div>
+      <div class="function-item" id="setNtsPriceBox">
+        <div class="mb-3">
+              <label for="_price" class="form-label">_price(如果设置0.55usdt  这里填 55)</label>
+              <input type="number" class="form-control" id="_price" placeholder="uint256" aria-describedby="emailHelp">
+            </div>
+            
+        <div class="d-grid gap-2">
+             <button class="btn btn-primary" onclick="App.setNtsPrice()" type="button">setNtsPrice</button>
+           </div>
+        </div>
+  </div>
+  </div>
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/web3.min.js"></script>
+<script src="./js/bignumber.min.js"></script>
+<script src="./dapp.js"></script>
+</html>
